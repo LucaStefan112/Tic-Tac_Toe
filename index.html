@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Informatics Certificate Project">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Mironescu Beatrice-Emilie, Uliliuc Mara-Georgiana">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tick-Tack-Toe</title>
+        <link rel="icon" href="./media/icon.png">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body id="body">
+        <div id="iconWrap"><div id="leftIconActive"></div></div>
+        <div id="mainDiv">
+            <div id="crossBar"></div>
+            <div class="tableRow">
+                <button class="tileButton" id="00" onclick="Clicked(0, 0)"></button>
+                <button class="tileButton" id="01" onclick="Clicked(0, 1)"></button>
+                <button class="tileButton" id="02" onclick="Clicked(0, 2)"></button>
+            </div>
+            <div class="tableRow">
+                <button class="tileButton" id="10" onclick="Clicked(1, 0)"></button>
+                <button class="tileButton" id="11" onclick="Clicked(1, 1)"></button>
+                <button class="tileButton" id="12" onclick="Clicked(1, 2)"></button>
+            </div>
+            <div class="tableRow">
+                <button class="tileButton" id="20" onclick="Clicked(2, 0)"></button>
+                <button class="tileButton" id="21" onclick="Clicked(2, 1)"></button>
+                <button class="tileButton" id="22" onclick="Clicked(2, 2)"></button>
+            </div>
+        </div>
+        <div id="iconWrap"><div id="rightIconPassive"></div></div>
+        <div id="reloadDiv" onclick="reloadPage()"></div>
+    </body>
+    <script defer src="./index.js"></script>
+</html>
+

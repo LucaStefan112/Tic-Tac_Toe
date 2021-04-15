@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#body{
+    margin-top: 5%;
+    background-color: #c2c2c2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#reloadDivActive{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#iconWrap{
+    display: flex ;
+    width: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#mainDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftIconActive, #rightIconActive{
+    width: 100%;
+    padding-top: 110%;
+    background-size: cover;
+    animation: hover 1.5s infinite ease-in-out;
+}
+
+#leftIconPassive, #rightIconPassive{
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+}
+
+#leftIconActive{
+    background-image: url('./media/_1.png');
+}
+
+#rightIconActive{
+    background-image: url('./media/_-1.png');
+}
+
+#leftIconPassive{
+    background-image: url('./media/_1Passive.png');
+    animation: fadeIn1 0.5s linear;
+}
+
+#rightIconPassive{
+    background-image: url('./media/_-1Passive.png');
+    animation: fadeIn-1 0.5s linear;
+}
+
+#r01, #r0-1, #r11, #r1-1, #r21, #r2-1{
+    position:absolute; 
+    width: 95%; 
+    height: 3%; 
+    border-radius: 15px;
+    animation: crossBar 1s linear;
+}
+#r01, #r0-1{top:15%;}
+#r11, #r1-1{top:49%;}
+#r21, #r2-1{top:82%;}
+
+#c01, #c11, #c21, #c0-1, #c1-1, #c2-1{
+    position:absolute; 
+    width: 3%; 
+    height: 95%; 
+    border-radius: 15px;
+    animation: crossBar 1s linear;
+}
+#c01, #c0-1{left:15%;}
+#c11, #c1-1{left:49%;}
+#c21, #c2-1{left:82%;}
+
+#d11, #d1-1, #d21, #d2-1{
+    position:absolute; 
+    width: 130%; 
+    height: 3%; 
+    border-radius: 15px;
+    animation: crossBar 1s linear;
+}
+#d11, #d1-1{transform: rotate(45deg);}
+#d21, #d2-1{transform: rotate(-45deg);}
+
+.tableRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 33.33%;
+}
+
+.tileButton{
+    height: 100%;
+    width: 33.33%;
+    border: solid #c2c2c2;
+    outline: none;
+}
+
+.tileButton:hover{
+    cursor: pointer;
+}
+
+._1, ._-1{
+    background-size: cover;
+    animation: setChoice 0.2s;
+}
+._1{
+    background-image: url('./media/_1.png');
+}
+._-1{
+    background-image: url('./media/_-1.png');
+}
+@keyframes setChoice {
+    0% {height: 100%; width: 33.33%;}
+    50%{height: 80%; width: 26.66%}
+    100%{height: 100%; width: 33.33%;}
+}
+
+@keyframes hover{
+    0%  {margin-bottom: 0px;}
+    50% {margin-bottom: 75%;}
+    100%{margin-bottom: 0px;}
+}
+
+@keyframes fadeIn-1 {
+   0%{  width: 100%;
+        padding-top: 110%;
+        background-image: url('./media/_-1.png');
+   }
+
+   100%{
+        width: 100%;
+        padding-top: 100%;
+        background-image: url('./media/_-1Passive.png');
+   }
+}
+
+@keyframes fadeIn1 {
+    0%{ width: 100%;
+        padding-top: 110%;
+        background-image: url('./media/_1.png');
+    }
+ 
+    100%{
+        width: 100%;
+        padding-top: 100%;
+        background-image: url('./media/_1Passive.png');
+    }
+ }
+
+ @keyframes crossBar{
+     0% {opacity: 0;}
+     100% {opacity: 1;}
+ }
