@@ -49,20 +49,20 @@
 }
 
 #leftIconActive{
-    background-image: url('./media/_1.png');
+    background-image: url('./media/1.png');
 }
 
 #rightIconActive{
-    background-image: url('./media/_-1.png');
+    background-image: url('./media/-1.png');
 }
 
 #leftIconPassive{
-    background-image: url('./media/_1Passive.png');
+    background-image: url('./media/1Passive.png');
     animation: fadeIn1 0.5s linear;
 }
 
 #rightIconPassive{
-    background-image: url('./media/_-1Passive.png');
+    background-image: url('./media/-1Passive.png');
     animation: fadeIn-1 0.5s linear;
 }
 
@@ -122,10 +122,10 @@
     animation: setChoice 0.2s;
 }
 ._1{
-    background-image: url('./media/_1.png');
+    background-image: url('./media/1.png');
 }
 ._-1{
-    background-image: url('./media/_-1.png');
+    background-image: url('./media/-1.png');
 }
 @keyframes setChoice {
     0% {height: 100%; width: 33.33%;}
@@ -142,26 +142,26 @@
 @keyframes fadeIn-1 {
    0%{  width: 100%;
         padding-top: 110%;
-        background-image: url('./media/_-1.png');
+        background-image: url('./media/-1.png');
    }
 
    100%{
         width: 100%;
         padding-top: 100%;
-        background-image: url('./media/_-1Passive.png');
+        background-image: url('./media/-1Passive.png');
    }
 }
 
 @keyframes fadeIn1 {
     0%{ width: 100%;
         padding-top: 110%;
-        background-image: url('./media/_1.png');
+        background-image: url('./media/1.png');
     }
  
     100%{
         width: 100%;
         padding-top: 100%;
-        background-image: url('./media/_1Passive.png');
+        background-image: url('./media/1Passive.png');
     }
  }
 
